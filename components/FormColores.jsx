@@ -12,19 +12,19 @@ const FormColores = () => {
   return (
     <>
       <Form>
-        <Form.Group className='my-4 d-flex align-items-center'>
+        <Form.Group className='my-4 mx-auto d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between'>
           <div className='mx-auto' style={style} />
           <FloatingLabel
             controlId="floatingInput"
             label="Ingrese un color"
-            className='w-75'
+            className='my-4 inputColor'
           >
             <Form.Control
               type='text'
               placeholder="Ingrese un color"
             />
           </FloatingLabel>
-          <Button variant='success' className='ms-auto'>Guardar color</Button>
+          <Button variant='success' className='mx-auto'>Guardar color</Button>
         </Form.Group>
       </Form>
     </>
