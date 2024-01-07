@@ -1,10 +1,15 @@
+import { Container } from 'react-bootstrap'
 import './App.css'
+import Footer from '../components/Footer'
 
 function App() {
 
   return (
     <>
-      <h1>Hola mundo !</h1>
+      <Container className='my-4 mainPage'>
+        <h1>Hola mundo !</h1>
+      </Container>
+      <Footer />
     </>
   )
 }
