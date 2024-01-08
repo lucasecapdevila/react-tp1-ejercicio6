@@ -33,7 +33,7 @@ const FormColores = () => {
         </Form.Group>
       </Form>
 
-      <ListaColores />
+      <ListaColores styleProps={style} />
     </section>
   )
 }
