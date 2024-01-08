@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, FloatingLabel, Form } from 'react-bootstrap'
 import ListaColores from './ListaColores'
 
 const FormColores = () => {
+  const [color, setColor] = useState('')
+
   const style = {
     height: '120px',
     width: '120px',
     border: '1px solid black',
-    background: '#fff'
+    background: color
   }
 
   return (
@@ -23,9 +25,11 @@ const FormColores = () => {
             <Form.Control
               type='text'
               placeholder="Ingrese un color"
+              onChange={(e) => setColor(e.target.value)}
+              value={color}
             />
           </FloatingLabel>
-          <Button variant='success' className='mx-auto'>Guardar color</Button>
+          <Button variant='success' className='mx-auto' type='submit'>Guardar color</Button>
         </Form.Group>
       </Form>
 
