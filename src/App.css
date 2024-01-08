@@ -13,3 +13,9 @@
     width: 60%;
   }
 }
+
+.muestraColor{
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+}
