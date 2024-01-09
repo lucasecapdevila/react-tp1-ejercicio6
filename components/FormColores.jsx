@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button, FloatingLabel, Form } from 'react-bootstrap'
 import ListaColores from './ListaColores'
 
 const FormColores = () => {
   const [color, setColor] = useState('')
-  const [colores, setColores] = useState([])
+
+  const coloresLS = JSON.parse(localStorage.getItem('listaColores')) || []
+  const [colores, setColores] = useState(coloresLS)
+
+  useEffect(() => {
+    localStorage.setItem('listaColores', JSON.stringify(colores))
+  },[colores])
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
