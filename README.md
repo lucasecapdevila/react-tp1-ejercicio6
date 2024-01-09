@@ -1,8 +1,11 @@
-# React + Vite
+# Ejercicios React - Rolling Code School 
+Prácticas con componentes, ciclo de vida del componente, eventos etc.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Ejercicio N°6: Paleta de colores- Dificultad: 🟢🟡
+Crear un proyecto de react que muestre un formulario con un input y un button
+que permite guardar un color en el localstorage, similar a la siguiente imagen:
 
-Currently, two official plugins are available:
+![imagen](./public/tp6.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Link de Deploy:
+- [Netlify](https://lucasecapdevila-tpn6react76i.netlify.app/)
